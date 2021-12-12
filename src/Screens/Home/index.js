@@ -1,9 +1,17 @@
 import React from 'react';
+import { NavBar } from '../../Components/Navbar';
 
-import './styles.css';
+import { 
+  Container,
+  HomeSection,
+  MyImage,
+  CardMyHistory
+} from './styles';
 
 export function Home(){
   return(
-    <div>HomePage</div>
+    <Container>
+      <NavBar />
+    </Container>
   );
 }

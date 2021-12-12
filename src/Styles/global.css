@@ -1,3 +1,14 @@
 *{
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #292929;
+  color: #c2c2c2;
+}
+
+body, input, button, textarea {
+  font: 400 16px 'Roboto', sans-serif;
 }
