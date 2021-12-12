@@ -18,7 +18,14 @@ import {
   AreasInScheduleSection,
   TitleCurricularScheduleSection,
   TitleAreaCurricularScheduleSection,
-  LanguageAndTecnology
+  LanguageAndTecnology,
+  ProfessionalActuationSection,
+  TimeLineItem,
+  ProjectsPerformanceSection,
+  Projects,
+  ImageProjectArea,
+  ImageProject,
+  DescriptionProjectArea
 } from './styles';
 
 import MyPhoto from '../../Assets/myImage.jpeg';
@@ -41,6 +48,7 @@ import TddImage from '../../Assets/tdd.png';
 import RestImage from '../../Assets/rest.png';
 import ScrumImage from '../../Assets/scrum.png';
 import MvcImage from '../../Assets/mvc.png';
+import AppRaiseImage from '../../Assets/appRaise.png';
 
 export function Home(){
   return(
@@ -158,37 +166,56 @@ export function Home(){
           </AreasInScheduleSection>
         </LanguageAndTecnologiesArea>
       </CurricularScheduleSection>
+      <ProfessionalActuationSection>
+        <TitleAreaCurricularScheduleSection>
+          <TitleCurricularScheduleSection>Atuação Profissional</TitleCurricularScheduleSection>
+          <Icons src={Programming} />
+        </TitleAreaCurricularScheduleSection>
+        <TimeLineItem dateIs="22/04/2021">
+          <TextSemiBold>Estagiário - Desenvolvimento | Consórcio Magalu</TextSemiBold>
+          <TextNormal>Ingressei como Estagiário em desenvolvimento no Consórcio Magalu no dia 22/04/2021. Ao iniciar o estágio tive um treinamento sobre todas
+                      as regras de negócio que envolviam a empresa, passando por todas as areas conhecendo suas especificidades afim de facilitar no desenvolvimento de soluções.
+                      Após isto tive um treinamento em todas as tecnologias utilizadas pela empresa. Iniciei com SQL Server, onde tive um curso intensivo do básico ao avançado.
+                      Após isto iniciei um treinamento de C#, pegando desde suas versões mais antigas (Asp.net - Full Framework), até suas implementações mais recenter como .NET 5+.
+                      Finalizado o treinamento de C#, iniciei um treinamento de JavaScript abordando React, React Native e NodeJS. Neste ainda pude aprimorar experiências utilizando Express, Sequelize e Swagger.
+                      Após todos os módulos comecei atuar nas demandas da empresa.
+          </TextNormal>
+        </TimeLineItem>
+        <TimeLineItem dateIs="24/11/2021">
+          <TextSemiBold>Desenvolvedor Full-Stack | Consórcio Magalu</TextSemiBold>
+          <TextNormal>Fui efetivado como Desenvolvedor Full-Stack no Consórcio Magalu no dia 24/11/2021. Após o estágio realizado com sucesso trabalhando com as ferramentas citadas acima,
+                      trabalhei em implementações importantes envolvendo todas estas tecnologias. Atuando agora na implementação do PIX.
+          </TextNormal>
+        </TimeLineItem>
+        <Line />
+      </ProfessionalActuationSection>
+      <ProjectsPerformanceSection>
+        <TitleAreaCurricularScheduleSection>
+          <TitleCurricularScheduleSection>Projetos</TitleCurricularScheduleSection>
+          <Icons src={Programming} />
+        </TitleAreaCurricularScheduleSection>
+        <Projects>
+          <ImageProjectArea>
+            <ImageProject src={AppRaiseImage}/>
+          </ImageProjectArea>
+          <DescriptionProjectArea>
+            <TextNormal>
+            AppRaise é um sistema avançado de avaliação de produtos que reune milhares de opções
+            para que os usuários consigam ser influenciados em sua compra de forma positiva.
+            O aplicativo consiste em uma 
+            plataforma que reúne milhares de produtos com suas características e 
+            avaliações, direcionando o usuário sobre suas compras. 
+            O intuito é possibilitar ao usuário adicionar sua própria avaliação ao 
+            produto, possibilitar ao usuário comentar em um devido produto informando 
+            sua satisfação ou insatisfação com sua compra, entre diversas outras 
+            funcionalidades que foram implementadas. 
+            A aplicação foi desenvolvida em React native para a construção da interface. NodeJS para o Back-end da aplicação.
+            Python para o algoritmo de webscraping(Responsável por mapear todos os produtos da nossa base) e VueJS para a area administrativa.
+            Desenvolvido por: Pedro Cortez, Gustavo Bessa e Rafael Silveira
+            </TextNormal>
+          </DescriptionProjectArea>
+        </Projects>
+      </ProjectsPerformanceSection>
     </Container>
   );
 }
-
-{/* <CurricularScheduleSection>
-        <TitleArea>
-          <TextBold>Conhecimentos adquiridos</TextBold>
-          <Icons src={Programming}/>
-        </TitleArea>
-        <LanguageAndTecnologiesArea>
-          <LanguagesArea>
-            <TitleArea>
-              <TextBold>Linguagens</TextBold>
-            </TitleArea>
-
-            <TextNormal>C</TextNormal>
-            <Icons src={LinguagemC}/>
-
-            <TextNormal>C#</TextNormal>
-            <Icons src={LinguagemCSharp}/>
-
-            <TextNormal>Java</TextNormal>
-            <Icons src={LinguagemJava}/>
-
-            <TextNormal>JavaScript</TextNormal>
-            <Icons src={LinguagemJS}/>
-
-            <TextNormal>SQL</TextNormal>
-            <Icons src={LinguagemSQL}/>
-          </LanguagesArea>
-          <TecnologiesArea></TecnologiesArea>
-          <DesignStandardsArea></DesignStandardsArea>
-        </LanguageAndTecnologiesArea>
-      </CurricularScheduleSection> */}
