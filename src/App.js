@@ -5,14 +5,14 @@ import {
   Routes
 } from "react-router-dom";
 
-import { Home } from "./Screens/Home";
+import { HomePage } from "./Screens/HomePage";
 import { Contact } from "./Screens/Contact";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>

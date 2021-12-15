@@ -13,7 +13,8 @@ import {
   TextSemiBold,
   TextNormal,
   Icons,
-  Line
+  Line,
+  ButtonRedirectTo
 } from '../../Styles/globalStyles';
 
 import { Image } from '../../Utils/imagesExporter';
@@ -30,13 +31,19 @@ export function HomeComponent(){
         <TextSemiBold>Sou formando do curso de Análise e Desenvolvimento de Sistemas do IFTM - Instituto Federal do Triângulo Mineiro</TextSemiBold> <br /> 
         <SocialNetworksArea>
           <TextNormal>Linkedin:</TextNormal>
-          <Icons src={Image.Linkedin}/>
+          <ButtonRedirectTo href="https://www.linkedin.com/in/pedro-cortez-616296193/" target="_blank">
+            <Icons src={Image.Linkedin}/>
+          </ButtonRedirectTo>
 
           <TextNormal>Facebook:</TextNormal>
-          <Icons src={Image.Facebook}/>
+          <ButtonRedirectTo href="https://www.facebook.com/pedro.cortez.90813" target="_blank">
+            <Icons src={Image.Facebook}/>
+          </ButtonRedirectTo>
 
           <TextNormal>GitHub:</TextNormal>
-          <Icons src={Image.GitHub}/>
+          <ButtonRedirectTo href="https://github.com/pedrocortez877" target="_blank">
+            <Icons src={Image.GitHub}/>
+          </ButtonRedirectTo>
         </SocialNetworksArea> 
         <Line />
       </AreaMyHistory>

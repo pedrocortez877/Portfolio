@@ -16,7 +16,7 @@ export const LanguageAndTecnologiesArea = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
 
-  margin-top: 50px;
+  margin-top: 20px;
 `;
 
 export const TitleAreaCurricularScheduleSection = styled.div`

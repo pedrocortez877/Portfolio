@@ -23,11 +23,22 @@ export const TextNormal = styled.p`
   margin-top: 10px;
 `;
 
-export const Icons = styled.img`
+export const ButtonRedirectTo = styled.a`
   height: 40px;
   width: 40px;
 
   margin-right: 30px;
+  
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+`;
+
+export const Icons = styled.img`
+  height: 40px;
+  width: 40px;
+
   border-radius: 20px;
 `;
 

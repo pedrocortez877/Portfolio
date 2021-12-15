@@ -15,8 +15,6 @@ export const LanguageAndTecnologiesArea = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
-  margin-top: 50px;
 `;
 
 export const AreasInScheduleSection = styled.div`
@@ -48,7 +46,6 @@ export const ProjectsArea = styled.div`
   display: flex;
   flex-direction: row;
   
-  padding-bottom: 20px;
 `;
 
 export const Projects = styled.div`

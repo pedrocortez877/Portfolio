@@ -1,24 +1,22 @@
-import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
   display: flex;
-
-  width: 100vw;
+  justify-content: flex-start;
+  align-items: center;
   height: 85px;
 
-  border-bottom: 3px solid #4f0308;
+  border-bottom: 5px solid #420106;
   border-bottom-right-radius: 30px;
-  padding: 30px;
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled.button`
   color: #696969;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+  background-color: transparent;
+  border: none;
+
   padding: 0 1rem;
-  height: 100%;
+
   cursor: pointer;
 
   font-family: Roboto;
@@ -33,11 +31,5 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavMenu = styled.div`
-  display: flex;
-  align-items: center;
-  align-self: center;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
